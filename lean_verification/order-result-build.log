@@ -1,0 +1,15 @@
+def VietorisOmegaOne.CompactPowerClaim : (Y : Type) → [inst : TopologicalSpace Y] → Prop :=
+fun Y [TopologicalSpace Y] =>
+  SecondCountableTopology (VietorisOmegaOne.CompactPower Y) ∧ IsLindelof Set.univ ∧ ¬IsSigmaCompact Set.univ
+def VietorisOmegaOne.CompactPower : (Y : Type) → [inst : TopologicalSpace Y] → Type :=
+fun Y [TopologicalSpace Y] => { f // IsCompact (Set.range f) }
+def VietorisOmegaOne.compactPowerTopology : (Y : Type) →
+  [inst : TopologicalSpace Y] → TopologicalSpace (VietorisOmegaOne.CompactPower Y) :=
+fun Y [TopologicalSpace Y] =>
+  TopologicalSpace.induced (fun f => ↑f)
+    (TopologicalSpace.generateFrom
+      {A | ∃ U F V, IsOpen U ∧ (∀ i ∈ F, IsOpen (V i)) ∧ A = {f | Set.range f ⊆ U ∧ ∀ i ∈ F, f i ∈ V i}})
+'VietorisOmegaOne.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VietorisOmegaOne.orderModelHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+'VietorisOmegaOne.order_model_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+COMPILER_EXIT_CODE=0

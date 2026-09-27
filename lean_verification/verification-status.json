@@ -1,0 +1,76 @@
+{
+  "status": "VERIFIED",
+  "certificate_issued": true,
+  "date": "2026-09-27",
+  "paper_author": "Lucas Alves de Almeida",
+  "email": "lucasdeirva8x@gmail.com",
+  "formalization_prepared_by": "ChatGPT Astra",
+  "exact_result": "The compact-range Vietoris power of the extended natural numbers in the order topology is second-countable, Lindelof, and not sigma-compact.",
+  "checked_declaration": "VietorisOmegaOne.order_model_theorem",
+  "checked_type": "VietorisOmegaOne.CompactPowerClaim ℕ∞",
+  "theorem_hypotheses": [],
+  "kernel_verification_performed": true,
+  "lean_version": "4.19.0",
+  "lean_commit": "6caaee842e94",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "final_audit_command": "lake env lean FullAudit.lean",
+  "final_audit_exit_code": 0,
+  "axioms": {
+    "VietorisOmegaOne.main_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VietorisOmegaOne.orderModelHomeomorph": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VietorisOmegaOne.order_model_theorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audit_log_sha256": "d615e845f3cc2af273a10441edb099f40cb2dfa5ebbf51d04db6586e91c66bb4",
+  "source_reference": {
+    "arxiv": "2507.17936v3",
+    "question": 1,
+    "page": 11,
+    "definitions": [
+      "1.8",
+      "1.14"
+    ],
+    "definition_pages": [
+      4,
+      5
+    ],
+    "pdf_sha256": "678bb3e29858bfee66ac589c60ed44e2032f8345105339f21f8a3aebc23e2a92"
+  },
+  "scope_notes": [
+    "The proof uses genuine compactness and the explicitly generated Vietoris-power topology.",
+    "The complete construction is transported to ENat with its order topology.",
+    "No mathlib ordinal subtype is used; ENat is the concrete order-topological model of omega+1.",
+    "Interpreting the source notation and indexing cardinal is a documented mathematical reading, not PDF interpretation by Lean.",
+    "This is a local verification record, not independent peer review, an institutional certificate, or a priority claim."
+  ],
+  "sha256": {
+    "VietorisOmegaOne/Countability.lean": "24eb9610d96300cd3ddddab251922466020064ba3b897e2947da538cd67691bb",
+    "VietorisOmegaOne/Diagonal.lean": "25e0602340c34c91fc907fdfa00577fb0c50cf6c1f00e6d4e1b0536ab6d82751",
+    "VietorisOmegaOne/Model.lean": "e9934660dbafb11038b8226cd443018705eabcfef4e834ed9910e7b88e40d983",
+    "VietorisOmegaOne/OrderModel.lean": "b495cda889912e75f26113bcaeb8e0a6020d7a5420753f001080dbb327881f0b",
+    "VietorisOmegaOne/OrderResult.lean": "e188bc1d5d456bbe0d72eefde0d8d05ed8b754131a46ca8f59b3f2730ca33733",
+    "VietorisOmegaOne/Results.lean": "301cf1f43acb3c507e09bb50e24ac0169647bf18401b32a9495eec4fb4c9aab2",
+    "VietorisOmegaOne/TopologyProof.lean": "d3d169743bb653f301afa14f60e3d1d76880024ee1f467077a6cb1084ef1242c",
+    "VietorisOmegaOne.lean": "068029aef8d5da9c1fc10aa0b2d96f81158d70c3922fd56a69104c36fb9e5204",
+    "FullAudit.lean": "9bba0d6b837d1f8e928f2a4ee2aff913c36b295c9d4277c85ca8644c2d674ce6",
+    "CoreAudit.lean": "f731a914afdcbbd314e94004efb42a5b587b926f897bceff8cf54e1a4fe58fc9",
+    "lakefile.lean": "f74d2832506b774093de0bd27f2d74f1d9eaf117bc1c0264ea21412d1715041f",
+    "lake-manifest.json": "d8213aa6c0b82901c467199569dd6f57f6d9325b001b1d65c701dfee1da85bd2",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "verify.ps1": "4e43d5ae04ba937a4da03c222dcd61388bfa281c4a3e0a8f0c44b2f8534dac97",
+    "README.md": "31dabf4e8695bf18030e207a0e3a2198552e5738751ecac2d280a4ded5f52eca",
+    "verification-audit.log": "d615e845f3cc2af273a10441edb099f40cb2dfa5ebbf51d04db6586e91c66bb4",
+    "order-result-build.log": "aa635f532023d0ce4e52d6945879a685fc71c164d31a1c4e3bc5b38ab3045af6"
+  }
+}
