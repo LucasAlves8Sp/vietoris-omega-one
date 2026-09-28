@@ -37,3 +37,10 @@ This is a reproducible local verification record, not an institutional certifica
 ## AI disclosure
 
 ChatGPT Astra performed almost all of the mathematical development, Lean formalization and manuscript preparation. Lucas Alves de Almeida reports that his role was to check and edit the paper.
+
+
+## Extension to all countable ordinals above omega
+
+The subsequent [countable-ordinal project](https://github.com/LucasAlves8Sp/vietoris-countable-ordinals) proves that K(alpha, ord) is second-countable and Lindelof, but neither sigma-compact nor Menger, for every omega < alpha < omega one. Its revised manuscript places the closed-subspace transfer of the present omega + 1 result at the center of the extension.
+
+The original verified Lean sources in this repository are preserved. `FILES.sha256` records the source, documentation and PDF bytes supplied with this completed repository package.
